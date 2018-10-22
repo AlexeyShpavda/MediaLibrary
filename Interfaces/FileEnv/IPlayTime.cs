@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Interfaces.FileEnv
 {
-    interface IPlayTime
+    interface IPlayTime : IFile
     {
+        string Length { get; set; }
     }
 }

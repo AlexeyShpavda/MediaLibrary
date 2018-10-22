@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Interfaces.FileEnv
 {
-    interface IMusic
+    interface IMusic : IAudioParameters
     {
+        string Genre { get; set; }
+        string Artist { get; set; }
+        string Album { get; set; }
+        string Title { get; set; }
+        string Year { get; set; }
     }
 }

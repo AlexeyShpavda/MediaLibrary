@@ -41,6 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileEnv\IAudioParameters.cs" />
+    <Compile Include="FileEnv\IFile.cs" />
+    <Compile Include="FileEnv\IMusic.cs" />
+    <Compile Include="FileEnv\IPhoto.cs" />
+    <Compile Include="FileEnv\IPlayTime.cs" />
+    <Compile Include="FileEnv\IVideo.cs" />
     <Compile Include="MediaLibraryEnv\IAdditionalMediaLibraryFunctionality.cs" />
     <Compile Include="MediaLibraryEnv\IMainMediaLibraryFunctionality.cs" />
     <Compile Include="MediaLibraryEnv\IMediaLibrary.cs" />
@@ -53,8 +59,6 @@
     <Compile Include="PlaylistEnv\IPlaylistData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="FileEnv\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

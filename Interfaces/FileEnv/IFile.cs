@@ -8,5 +8,10 @@ namespace Interfaces.FileEnv
 {
     interface IFile
     {
+        Guid Id { get; set; }
+        string Name { get; set; }
+        string Type { get; set; }
+        ulong Size { get; set; }
+        string Location { get; set; }
     }
 }
