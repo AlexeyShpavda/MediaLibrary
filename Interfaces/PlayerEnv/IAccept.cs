@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Interfaces.MediaLibraryEnv
+namespace Interfaces.PlayerEnv
 {
-    interface IMediaLibrary : IMainMediaLibraryFunctionality, IAdditionalMediaLibraryFunctionality
+    interface IAccept
     {
+        void Accept(IVisitor visitor);
     }
 }

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Interfaces.PlaylistEnv
 {
-    interface IAdditionalPlaylistFunctionality
+    interface IAdditionalPlaylistFunctionality<TFile>
     {
+        ulong GetFilesNumber();
     }
 }

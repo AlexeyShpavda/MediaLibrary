@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Interfaces.PlaylistEnv
 {
-    interface IMainPlaylistFunctionality
+    interface IMainPlaylistFunctionality<TFile>
     {
+        void AddFile(TFile mediaFiles);
+        void RemoveFile(Guid id);
+        ICollection<TFile> GetAllFiles();
+        void Clear();
     }
 }

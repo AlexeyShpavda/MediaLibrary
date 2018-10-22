@@ -8,5 +8,7 @@ namespace Interfaces.MediaLibraryEnv
 {
     interface IAdditionalMediaLibraryFunctionality
     {
+        ulong GetFilesNumberInMediaLibrary();
+        ulong GetFilesNumberInPlaylist(Guid id);
     }
 }
