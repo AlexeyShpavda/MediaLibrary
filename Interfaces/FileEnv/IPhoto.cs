@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces.FileEnv
 {
-    interface IPhoto : IFile
+    public interface IPhoto : IFile
     {
         string Dimensions { get; set; }
         ushort Width { get; set; }

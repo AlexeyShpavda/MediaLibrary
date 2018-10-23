@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces.FileEnv
 {
-    interface IFile
+    public interface IFile
     {
         Guid Id { get; set; }
         string Name { get; set; }

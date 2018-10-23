@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces.FileEnv
 {
-    interface IVideo : IAudioParameters
+    public interface IVideo : IAudioParameters
     {
         ushort FrameWidth { get; set; }
         ushort FrameHeight { get; set; }

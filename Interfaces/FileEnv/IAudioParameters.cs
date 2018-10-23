@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces.FileEnv
 {
-    interface IAudioParameters : IPlayTime
+    public interface IAudioParameters : IPlayTime
     {
         ulong BitRate { get; set; }
         ulong SampleRate { get; set; }
