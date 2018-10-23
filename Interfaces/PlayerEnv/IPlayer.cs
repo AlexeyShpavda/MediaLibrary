@@ -9,7 +9,7 @@ using Interfaces.PlaylistEnv;
 
 namespace Interfaces.PlayerEnv
 {
-    interface IPlayer
+    public interface IPlayer
     {
         void Play(ICollection<IFile> files);
         void PlayFile(IFile file);

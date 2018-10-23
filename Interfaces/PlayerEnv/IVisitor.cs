@@ -8,7 +8,7 @@ using Interfaces.FileEnv;
 
 namespace Interfaces.PlayerEnv
 {
-    interface IVisitor
+    public interface IVisitor
     {
         void VisitPhotoFile(IPhoto photo);
         void VisitMusicFile(IMusic music);

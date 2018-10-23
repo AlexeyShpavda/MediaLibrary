@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces.PlayerEnv
 {
-    interface IAccept
+    public interface IAccept
     {
         void Accept(IVisitor visitor);
     }
