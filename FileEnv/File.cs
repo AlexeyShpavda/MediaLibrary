@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Interfaces.FileEnv;
+using Interfaces.PlayerEnv;
 
 namespace FileEnv
 {
-    abstract class File : IFile
+    abstract class File : IFile, IAccept
     {
         private Guid _id;
         private string _name;
