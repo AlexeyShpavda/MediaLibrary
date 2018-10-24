@@ -8,7 +8,7 @@ using Interfaces.FileEnv;
 
 namespace Interfaces.PlaylistEnv
 {
-    interface IPlaylist<TFile> : IPlaylistData<TFile>, 
+    public interface IPlaylist<TFile> : IPlaylistData<TFile>, 
         IMainPlaylistFunctionality<TFile>, IAdditionalPlaylistFunctionality<TFile>
     {
     }

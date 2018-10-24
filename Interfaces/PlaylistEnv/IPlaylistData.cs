@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces.PlaylistEnv
 {
-    interface IPlaylistData<TFile>
+    public interface IPlaylistData<TFile>
     {
         Guid Id { get; set; }
         string Name { get; set; }
