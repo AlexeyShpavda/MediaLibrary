@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces.MediaLibraryEnv
 {
-    interface IAdditionalMediaLibraryFunctionality
+    public interface IAdditionalMediaLibraryFunctionality
     {
         ulong GetFilesNumberInMediaLibrary();
         ulong GetFilesNumberInPlaylist(Guid id);

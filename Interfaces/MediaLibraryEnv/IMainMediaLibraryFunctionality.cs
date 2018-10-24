@@ -9,7 +9,7 @@ using Interfaces.PlaylistEnv;
 
 namespace Interfaces.MediaLibraryEnv
 {
-    interface IMainMediaLibraryFunctionality
+    public interface IMainMediaLibraryFunctionality
     {
         void AddFileToMediaLibrary(IFile file);
         void RemoveFileFromMediaLibrary(Guid fileId);
