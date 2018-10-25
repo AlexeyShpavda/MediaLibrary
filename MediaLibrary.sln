@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerEnv", "PlayerEnv\Play
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaylistEnv", "PlaylistEnv\PlaylistEnv.csproj", "{38EEC4F8-D560-4605-B234-0846076FC0AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaLibraryEnv", "MediaLibraryEnv\MediaLibraryEnv.csproj", "{257B883C-D359-4968-9A17-032BB7815DFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{38EEC4F8-D560-4605-B234-0846076FC0AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38EEC4F8-D560-4605-B234-0846076FC0AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38EEC4F8-D560-4605-B234-0846076FC0AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{257B883C-D359-4968-9A17-032BB7815DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{257B883C-D359-4968-9A17-032BB7815DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{257B883C-D359-4968-9A17-032BB7815DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{257B883C-D359-4968-9A17-032BB7815DFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
