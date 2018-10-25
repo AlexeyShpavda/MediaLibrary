@@ -57,5 +57,10 @@ namespace PlaylistEnv
         {
             MediaFiles.Clear();
         }
+
+        public ulong GetFilesNumber()
+        {
+            return (ulong)MediaFiles.Count();
+        }
     }
 }
