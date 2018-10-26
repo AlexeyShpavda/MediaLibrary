@@ -27,5 +27,15 @@ namespace MediaLibraryEnv
         private ICollection<IFile> MediaFiles { get => _mediaFiles; set => _mediaFiles = value; }
         private ICollection<IPlaylist<IFile>> Playlists { get => _playlists; set => _playlists = value; }
         private IPlayer Player { get => _player; set => _player = value; }
+
+        public void AddFileToMediaLibrary(IFile file)
+        {
+            MediaFiles.Add(file);
+        }
+
+        public void RemoveFileFromMediaLibrary(Guid fileId)
+        {
+            MediaFiles.Remove(SearchMediaFileByID(fileId));
+        }
     }
 }
