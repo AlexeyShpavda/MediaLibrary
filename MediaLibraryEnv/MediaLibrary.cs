@@ -58,6 +58,20 @@ namespace MediaLibraryEnv
             Playlists.Remove(SearchPlaylistById(id));
         }
 
+        public List<IFile> Search(string matchString)
+        {
+            List<IFile> matchedFiles = new List<IFile>();
+
+            foreach (var file in MediaFiles)
+            {
+                if (file.Name.Contains(matchString))
+                {
+                    matchedFiles.Add(file);
+                }
+            }
+            return matchedFiles;
+        }
+
         private IFile SearchMediaFileById(Guid id)
         {
             foreach (var mediaFile in MediaFiles)
