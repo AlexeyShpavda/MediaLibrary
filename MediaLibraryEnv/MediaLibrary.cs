@@ -13,5 +13,12 @@ namespace MediaLibraryEnv
 {
     public class MediaLibrary : IMediaLibrary
     {
+        private ICollection<IFile> _mediaFiles;
+        private ICollection<IPlaylist<IFile>> _playlists;
+        private IPlayer _player;
+
+        private ICollection<IFile> MediaFiles { get => _mediaFiles; set => _mediaFiles = value; }
+        private ICollection<IPlaylist<IFile>> Playlists { get => _playlists; set => _playlists = value; }
+        private IPlayer Player { get => _player; set => _player = value; }
     }
 }
