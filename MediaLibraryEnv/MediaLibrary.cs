@@ -38,6 +38,16 @@ namespace MediaLibraryEnv
             MediaFiles.Remove(SearchMediaFileById(fileId));
         }
 
+        public void AddFileToPlaylist(Guid playlistId, IFile file)
+        {
+            SearchPlaylistById(playlistId).AddFile(file);
+        }
+
+        public void RemoveFileFromPlaylist(Guid playlistId, Guid fileId)
+        {
+            SearchPlaylistById(playlistId).RemoveFile(fileId);
+        }
+
         private IFile SearchMediaFileById(Guid id)
         {
             foreach (var mediaFile in MediaFiles)
