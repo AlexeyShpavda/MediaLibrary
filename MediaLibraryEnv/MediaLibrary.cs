@@ -107,6 +107,16 @@ namespace MediaLibraryEnv
             Player.PlayPlaylist(playlist);
         }
 
+        public ulong GetFilesNumberInMediaLibrary()
+        {
+            return (ulong)MediaFiles.Count();
+        }
+
+        public ulong GetFilesNumberInPlaylist(Guid id)
+        {
+            return (ulong)Playlists.Count();
+        }
+
         private IFile SearchMediaFileById(Guid id)
         {
             foreach (var mediaFile in MediaFiles)
