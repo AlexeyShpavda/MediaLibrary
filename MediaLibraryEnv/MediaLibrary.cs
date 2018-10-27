@@ -82,6 +82,16 @@ namespace MediaLibraryEnv
             return Playlists;
         }
 
+        public void ClearFileList()
+        {
+            MediaFiles.Clear();
+        }
+
+        public void ClearPlaylistList()
+        {
+            Playlists.Clear();
+        }
+
         private IFile SearchMediaFileById(Guid id)
         {
             foreach (var mediaFile in MediaFiles)
