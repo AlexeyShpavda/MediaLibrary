@@ -49,5 +49,27 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FileEnv\FileEnv.csproj">
+      <Project>{fcec6219-fd4c-4d1e-ab4f-12f2b6969cb6}</Project>
+      <Name>FileEnv</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{81e4dfde-3a49-49c0-938c-ad364856939c}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MediaLibraryEnv\MediaLibraryEnv.csproj">
+      <Project>{257b883c-d359-4968-9a17-032bb7815dfa}</Project>
+      <Name>MediaLibraryEnv</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlayerEnv\PlayerEnv.csproj">
+      <Project>{465e2ef4-d022-4733-89e3-8e7529a1797b}</Project>
+      <Name>PlayerEnv</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlaylistEnv\PlaylistEnv.csproj">
+      <Project>{38eec4f8-d560-4605-b234-0846076fc0ad}</Project>
+      <Name>PlaylistEnv</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
