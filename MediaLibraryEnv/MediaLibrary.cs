@@ -72,6 +72,16 @@ namespace MediaLibraryEnv
             return matchedFiles;
         }
 
+        public ICollection<IFile> GetAllFiles()
+        {
+            return MediaFiles;
+        }
+
+        public ICollection<IPlaylist<IFile>> GetAllPlaylists()
+        {
+            return Playlists;
+        }
+
         private IFile SearchMediaFileById(Guid id)
         {
             foreach (var mediaFile in MediaFiles)
