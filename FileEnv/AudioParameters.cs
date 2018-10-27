@@ -8,7 +8,7 @@ using Interfaces.FileEnv;
 
 namespace FileEnv
 {
-    abstract class AudioParameters : PlayTime, IAudioParameters
+    public abstract class AudioParameters : PlayTime, IAudioParameters
     {
         private ulong _bitRate; // bps
         private ulong _sampleRate; // Hz

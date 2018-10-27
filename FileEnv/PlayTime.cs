@@ -8,7 +8,7 @@ using Interfaces.FileEnv;
 
 namespace FileEnv
 {
-    abstract class PlayTime : File, IPlayTime
+    public abstract class PlayTime : File, IPlayTime
     {
         private string _length;
 

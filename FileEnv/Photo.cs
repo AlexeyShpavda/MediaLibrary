@@ -9,7 +9,7 @@ using Interfaces.PlayerEnv;
 
 namespace FileEnv
 {
-    class Photo : File, IPhoto
+    public class Photo : File, IPhoto
     {
         private string _dimensions;
         private ushort _width;

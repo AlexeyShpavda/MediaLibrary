@@ -9,7 +9,7 @@ using Interfaces.PlayerEnv;
 
 namespace FileEnv
 {
-    class Video : AudioParameters, IVideo
+    public class Video : AudioParameters, IVideo
     {
         private ushort _frameWidth;
         private ushort _frameHeight;

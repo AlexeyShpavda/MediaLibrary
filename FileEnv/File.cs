@@ -9,7 +9,7 @@ using Interfaces.PlayerEnv;
 
 namespace FileEnv
 {
-    abstract class File : IFile
+    public abstract class File : IFile
     {
         private Guid _id;
         private string _name;

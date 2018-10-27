@@ -10,7 +10,7 @@ using Interfaces.PlayerEnv;
 
 namespace FileEnv
 {
-    class Music : AudioParameters, IMusic
+    public class Music : AudioParameters, IMusic
     {
         private string _genre;
         private string _artist;
