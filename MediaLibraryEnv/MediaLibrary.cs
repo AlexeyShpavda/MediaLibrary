@@ -92,6 +92,21 @@ namespace MediaLibraryEnv
             Playlists.Clear();
         }
 
+        public void Play()
+        {
+            Player.Play(MediaFiles);
+        }
+
+        public void PlayFile(IFile file)
+        {
+            Player.PlayFile(file);
+        }
+
+        public void PlayPlaylist(IPlaylist<IFile> playlist)
+        {
+            Player.PlayPlaylist(playlist);
+        }
+
         private IFile SearchMediaFileById(Guid id)
         {
             foreach (var mediaFile in MediaFiles)
