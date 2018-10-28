@@ -31,9 +31,9 @@ namespace PlaylistEnv
             MediaFiles.Add(mediaFile);
         }
 
-        public void RemoveFile(Guid id)
+        public void RemoveFile(TFile mediaFile)
         {
-            MediaFiles.Remove(SearchMediaFileByID(id));
+            MediaFiles.Remove(mediaFile);
         }
 
         private TFile SearchMediaFileByID(Guid id)
