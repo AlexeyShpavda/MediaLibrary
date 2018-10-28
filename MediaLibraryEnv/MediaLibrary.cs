@@ -33,19 +33,19 @@ namespace MediaLibraryEnv
             MediaFiles.Add(file);
         }
 
-        public void RemoveFileFromMediaLibrary(Guid fileId)
+        public void RemoveFileFromMediaLibrary(IFile file)
         {
-            MediaFiles.Remove(SearchMediaFileById(fileId));
+            MediaFiles.Remove(file);
         }
 
-        public void AddFileToPlaylist(Guid playlistId, IFile file)
+        public void AddFileToPlaylist(IPlaylist<IFile> playlist, IFile file)
         {
-            SearchPlaylistById(playlistId).AddFile(file);
+            playlist.AddFile(file);
         }
 
-        public void RemoveFileFromPlaylist(Guid playlistId, Guid fileId)
+        public void RemoveFileFromPlaylist(IPlaylist<IFile> playlist, IFile file)
         {
-            SearchPlaylistById(playlistId).RemoveFile(fileId);
+            playlist.RemoveFile(file);
         }
 
         public void CreatePlaylist(IPlaylist<IFile> playlist)
@@ -53,9 +53,9 @@ namespace MediaLibraryEnv
             Playlists.Add(playlist);
         }
 
-        public void RemovePlaylist(Guid id)
+        public void RemovePlaylist(IPlaylist<IFile> playlist)
         {
-            Playlists.Remove(SearchPlaylistById(id));
+            Playlists.Remove(playlist);
         }
 
         public List<IFile> Search(string matchString)
@@ -112,9 +112,9 @@ namespace MediaLibraryEnv
             return (ulong)MediaFiles.Count();
         }
 
-        public ulong GetFilesNumberInPlaylist(Guid id)
+        public ulong GetFilesNumberInPlaylist(IPlaylist<IFile> playlist)
         {
-            return (ulong)Playlists.Count();
+            return playlist.GetFilesNumber();
         }
 
         private IFile SearchMediaFileById(Guid id)
