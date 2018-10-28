@@ -13,5 +13,6 @@ namespace Interfaces.MediaLibraryEnv
     {
         ulong GetFilesNumberInMediaLibrary();
         ulong GetFilesNumberInPlaylist(IPlaylist<IFile> playlist);
+        ulong GetPlaylistsNumber();
     }
 }
