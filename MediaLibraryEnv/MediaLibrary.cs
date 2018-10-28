@@ -116,29 +116,5 @@ namespace MediaLibraryEnv
         {
             return playlist.GetFilesNumber();
         }
-
-        private IFile SearchMediaFileById(Guid id)
-        {
-            foreach (var mediaFile in MediaFiles)
-            {
-                if (mediaFile.Id == id)
-                {
-                    return mediaFile;
-                }
-            }
-            return null;
-        }
-
-        private IPlaylist<IFile> SearchPlaylistById(Guid id)
-        {
-            foreach (var playlist in Playlists)
-            {
-                if (playlist.Id == id)
-                {
-                    return playlist;
-                }
-            }
-            return null;
-        }
     }
 }
