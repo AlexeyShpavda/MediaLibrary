@@ -116,5 +116,10 @@ namespace MediaLibraryEnv
         {
             return playlist.GetFilesNumber();
         }
+
+        public ulong GetPlaylistsNumber()
+        {
+            return (ulong)Playlists.Count();
+        }
     }
 }
