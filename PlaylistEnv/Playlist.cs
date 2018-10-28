@@ -36,18 +36,6 @@ namespace PlaylistEnv
             MediaFiles.Remove(mediaFile);
         }
 
-        private TFile SearchMediaFileByID(Guid id)
-        {
-            foreach (var mediaFile in MediaFiles)
-            {
-                if (mediaFile.Id == id)
-                {
-                    return mediaFile;
-                }
-            }
-            return null;
-        }
-
         public ICollection<TFile> GetAllFiles()
         {
             return MediaFiles;
