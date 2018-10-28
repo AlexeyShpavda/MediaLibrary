@@ -12,11 +12,11 @@ namespace Interfaces.MediaLibraryEnv
     public interface IMainMediaLibraryFunctionality
     {
         void AddFileToMediaLibrary(IFile file);
-        void RemoveFileFromMediaLibrary(Guid fileId);
-        void AddFileToPlaylist(Guid playlistID, IFile file);
-        void RemoveFileFromPlaylist(Guid playlistId, Guid fileId);
+        void RemoveFileFromMediaLibrary(IFile file);
+        void AddFileToPlaylist(IPlaylist<IFile> playlist, IFile file);
+        void RemoveFileFromPlaylist(IPlaylist<IFile> playlist, IFile file);
         void CreatePlaylist(IPlaylist<IFile> playlist);
-        void RemovePlaylist(Guid id);
+        void RemovePlaylist(IPlaylist<IFile> playlist);
         List<IFile> Search(string matchString);
         ICollection<IFile> GetAllFiles();
         ICollection<IPlaylist<IFile>> GetAllPlaylists();
