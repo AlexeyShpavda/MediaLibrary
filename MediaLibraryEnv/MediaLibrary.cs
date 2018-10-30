@@ -107,19 +107,19 @@ namespace MediaLibraryEnv
             Player.PlayPlaylist(playlist);
         }
 
-        public ulong GetFilesNumberInMediaLibrary()
+        public int GetFilesNumberInMediaLibrary()
         {
-            return (ulong)MediaFiles.Count();
+            return MediaFiles.Count();
         }
 
-        public ulong GetFilesNumberInPlaylist(IPlaylist<IFile> playlist)
+        public int GetFilesNumberInPlaylist(IPlaylist<IFile> playlist)
         {
             return playlist.GetFilesNumber();
         }
 
-        public ulong GetPlaylistsNumber()
+        public int GetPlaylistsNumber()
         {
-            return (ulong)Playlists.Count();
+            return Playlists.Count();
         }
     }
 }
