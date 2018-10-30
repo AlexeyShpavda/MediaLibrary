@@ -11,8 +11,8 @@ namespace Interfaces.MediaLibraryEnv
 {
     public interface IAdditionalMediaLibraryFunctionality
     {
-        ulong GetFilesNumberInMediaLibrary();
-        ulong GetFilesNumberInPlaylist(IPlaylist<IFile> playlist);
-        ulong GetPlaylistsNumber();
+        int GetFilesNumberInMediaLibrary();
+        int GetFilesNumberInPlaylist(IPlaylist<IFile> playlist);
+        int GetPlaylistsNumber();
     }
 }
