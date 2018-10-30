@@ -13,7 +13,7 @@ namespace Interfaces.FileEnv
         Guid Id { get; set; }
         string Name { get; set; }
         string Type { get; set; }
-        ulong Size { get; set; }
+        int Size { get; set; }
         string Location { get; set; }
     }
 }

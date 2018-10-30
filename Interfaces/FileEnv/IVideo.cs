@@ -8,8 +8,8 @@ namespace Interfaces.FileEnv
 {
     public interface IVideo : IAudioParameters
     {
-        ushort FrameWidth { get; set; }
-        ushort FrameHeight { get; set; }
-        ushort FrameRate { get; set; }
+        int FrameWidth { get; set; }
+        int FrameHeight { get; set; }
+        int FrameRate { get; set; }
     }
 }

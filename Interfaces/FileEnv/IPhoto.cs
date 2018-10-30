@@ -9,7 +9,7 @@ namespace Interfaces.FileEnv
     public interface IPhoto : IFile
     {
         string Dimensions { get; set; }
-        ushort Width { get; set; }
-        ushort Height { get; set; }
+        int Width { get; set; }
+        int Height { get; set; }
     }
 }

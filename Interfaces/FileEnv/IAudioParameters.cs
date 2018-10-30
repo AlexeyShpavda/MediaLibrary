@@ -8,7 +8,7 @@ namespace Interfaces.FileEnv
 {
     public interface IAudioParameters : IPlayTime
     {
-        ulong BitRate { get; set; }
-        ulong SampleRate { get; set; }
+        int BitRate { get; set; }
+        int SampleRate { get; set; }
     }
 }
