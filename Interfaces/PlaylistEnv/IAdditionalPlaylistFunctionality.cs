@@ -8,6 +8,6 @@ namespace Interfaces.PlaylistEnv
 {
     public interface IAdditionalPlaylistFunctionality<TFile>
     {
-        ulong GetFilesNumber();
+        int GetFilesNumber();
     }
 }
