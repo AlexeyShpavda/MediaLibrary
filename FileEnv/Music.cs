@@ -18,8 +18,8 @@ namespace FileEnv
         private string _title;
         private string _year;
 
-        public Music(string type, string name, ulong size, string location, // File
-            ulong bitRate, ulong sampleRate, // AudioParameters
+        public Music(string type, string name, int size, string location, // File
+            int bitRate, int sampleRate, // AudioParameters
             string length, // PlayTime
             string genre, string artist, string album, string title, string year) : // Music
             base(type, name, size, location, length, bitRate, sampleRate)

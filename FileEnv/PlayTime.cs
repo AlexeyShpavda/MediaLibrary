@@ -12,7 +12,7 @@ namespace FileEnv
     {
         private string _length;
 
-        public PlayTime(string type, string name, ulong size, string location, string length) :
+        public PlayTime(string type, string name, int size, string location, string length) :
             base(type, name, size, location)
         {
             Length = length;
