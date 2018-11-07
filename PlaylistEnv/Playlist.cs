@@ -6,11 +6,13 @@ using Interfaces.FileEnv;
 
 namespace PlaylistEnv
 {
-    public class Playlist<TFile> : IPlaylist<TFile> where TFile : class, IFile
+    public class Playlist<TFile> : IPlaylist<TFile> where TFile : IFile
     {
-        private Guid _id;
-        private string _name;
-        private ICollection<TFile> _mediaFiles;
+        public Guid Id { get; set; }
+
+        public string Name { get; set; }
+
+        private ICollection<TFile> MediaFiles { get; set; }
 
         public Playlist(ICollection<TFile> mediaFiles, string name)
         {
@@ -18,10 +20,6 @@ namespace PlaylistEnv
             Name = name;
             MediaFiles = mediaFiles;
         }
-
-        public Guid Id { get => _id; set => _id = value; }
-        public string Name { get => _name; set => _name = value; }
-        private ICollection<TFile> MediaFiles { get => _mediaFiles; set => _mediaFiles = value; }
 
         public void AddFile(TFile mediaFile)
         {
