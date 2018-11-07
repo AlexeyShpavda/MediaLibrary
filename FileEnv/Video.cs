@@ -5,9 +5,11 @@ namespace FileEnv
 {
     public class Video : AudioParameters, IVideo
     {
-        private int _frameWidth;
-        private int _frameHeight;
-        private int _frameRate;
+        public int FrameWidth { get; set; }
+
+        public int FrameHeight { get; set; }
+
+        public int FrameRate { get; set; }
 
         public Video(string type, string name, int size, string location, // File
             int bitRate, int sampleRate, // AudioParameters
@@ -19,10 +21,6 @@ namespace FileEnv
             FrameHeight = frameHeight;
             FrameRate = frameRate;
         }
-
-        public int FrameWidth { get => _frameWidth; set => _frameWidth = value; }
-        public int FrameHeight { get => _frameHeight; set => _frameHeight = value; }
-        public int FrameRate { get => _frameRate; set => _frameRate = value; }
 
         public override void Accept(IVisitor visitor)
         {

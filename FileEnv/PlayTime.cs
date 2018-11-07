@@ -4,14 +4,12 @@ namespace FileEnv
 {
     public abstract class PlayTime : File, IPlayTime
     {
-        private string _length;
+        public string Length { get; set; }
 
         public PlayTime(string type, string name, int size, string location, string length) :
             base(type, name, size, location)
         {
             Length = length;
         }
-
-        public string Length { get => _length; set => _length = value; }
     }
 }

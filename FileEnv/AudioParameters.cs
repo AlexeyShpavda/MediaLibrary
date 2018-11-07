@@ -4,8 +4,9 @@ namespace FileEnv
 {
     public abstract class AudioParameters : PlayTime, IAudioParameters
     {
-        private int _bitRate; // bps
-        private int _sampleRate; // Hz
+        public int BitRate { get; set; }
+
+        public int SampleRate { get; set; }
 
         public AudioParameters(string type, string name, int size, string location,
             string length, int bitRate, int sampleRate) :
@@ -14,8 +15,5 @@ namespace FileEnv
             BitRate = bitRate;
             SampleRate = sampleRate;
         }
-
-        public int BitRate { get => _bitRate; set => _bitRate = value; }
-        public int SampleRate { get => _sampleRate; set => _sampleRate = value; }
     }
 }
