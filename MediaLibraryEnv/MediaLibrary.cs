@@ -9,9 +9,11 @@ namespace MediaLibraryEnv
 {
     public class MediaLibrary : IMediaLibrary
     {
-        private ICollection<IFile> _mediaFiles;
-        private ICollection<IPlaylist<IFile>> _playlists;
-        private IPlayer _player;
+        private ICollection<IFile> MediaFiles { get; set; }
+
+        private ICollection<IPlaylist<IFile>> Playlists { get; set; }
+
+        private IPlayer Player { get; set; }
 
         public MediaLibrary(ICollection<IFile> mediaFiles, ICollection<IPlaylist<IFile>> playlists, IPlayer player)
         {
@@ -19,10 +21,6 @@ namespace MediaLibraryEnv
             Playlists = playlists;
             Player = player;
         }
-
-        private ICollection<IFile> MediaFiles { get => _mediaFiles; set => _mediaFiles = value; }
-        private ICollection<IPlaylist<IFile>> Playlists { get => _playlists; set => _playlists = value; }
-        private IPlayer Player { get => _player; set => _player = value; }
 
         public void AddFileToMediaLibrary(IFile file)
         {
