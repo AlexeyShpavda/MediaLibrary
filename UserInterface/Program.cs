@@ -15,7 +15,7 @@ namespace UserInterface
     {
         private static void Main()
         {
-            IMediaLibrary mediaLibrary = new MediaLibrary(new List<IFile>(), new List<IPlaylist<IFile>>(), new Player());
+            IMediaLibrary mediaLibrary = new MediaLibrary(new Player());
 
             IPlaylist<IFile> playlist = new Playlist<IFile>("MyPlaylist");
 

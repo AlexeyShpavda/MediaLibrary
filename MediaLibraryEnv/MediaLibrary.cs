@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using Interfaces.MediaLibraryEnv;
 using Interfaces.FileEnv;
@@ -15,10 +16,10 @@ namespace MediaLibraryEnv
 
         private IPlayer Player { get; set; }
 
-        public MediaLibrary(ICollection<IFile> mediaFiles, ICollection<IPlaylist<IFile>> playlists, IPlayer player)
+        public MediaLibrary(IPlayer player)
         {
-            MediaFiles = mediaFiles;
-            Playlists = playlists;
+            MediaFiles = new Collection<IFile>();
+            Playlists = new Collection<IPlaylist<IFile>>();
             Player = player;
         }
 
