@@ -16,7 +16,7 @@ namespace FileEnv
 
         public string Location { get; set; }
 
-        public File(string type, string name, int size, string location)
+        protected File(string type, string name, int size, string location)
         {
             Id = Guid.NewGuid();
             Name = name;

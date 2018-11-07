@@ -6,7 +6,7 @@ namespace FileEnv
     {
         public string Length { get; set; }
 
-        public PlayTime(string type, string name, int size, string location, string length) :
+        protected PlayTime(string type, string name, int size, string location, string length) :
             base(type, name, size, location)
         {
             Length = length;

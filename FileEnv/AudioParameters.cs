@@ -8,7 +8,7 @@ namespace FileEnv
 
         public int SampleRate { get; set; }
 
-        public AudioParameters(string type, string name, int size, string location,
+        protected AudioParameters(string type, string name, int size, string location,
             string length, int bitRate, int sampleRate) :
             base(type, name, size, location, length)
         {
