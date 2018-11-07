@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Interfaces.FileEnv
+﻿namespace Interfaces.FileEnv
 {
     public interface IPlayTime : IFile
     {

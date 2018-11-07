@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-
-using Interfaces.FileEnv;
-
-namespace Interfaces.PlaylistEnv
+﻿namespace Interfaces.PlaylistEnv
 {
     public interface IPlaylist<TFile> : IPlaylistData<TFile>, 
         IMainPlaylistFunctionality<TFile>, IAdditionalPlaylistFunctionality<TFile>
