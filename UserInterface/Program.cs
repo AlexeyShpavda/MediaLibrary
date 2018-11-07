@@ -11,9 +11,9 @@ using PlayerEnv;
 
 namespace UserInterface
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             IMediaLibrary mediaLibrary = new MediaLibrary(new List<IFile>(), new List<IPlaylist<IFile>>(), new Player());
 
@@ -30,8 +30,6 @@ namespace UserInterface
             IFile mediaFile7 = new Video("mp4", "Video01", 15000000, @"D:\Videos", 320, 192000000, "3:00", 1920, 1080, 60);
             IFile mediaFile8 = new Video("mp4", "Video02", 16000000, @"D:\Videos", 320, 192000000, "4:00", 1280, 720, 59);
             IFile mediaFile9 = new Video("mp4", "Video03", 17000000, @"D:\Videos", 320, 192000000, "5:00", 1680, 1050, 30);
-
-            ICollection<IFile> mf = new List<IFile> { mediaFile1, mediaFile4, mediaFile7 };
 
             // Photo
             playlist.AddFile(mediaFile1);
