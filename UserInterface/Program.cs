@@ -17,7 +17,7 @@ namespace UserInterface
         {
             IMediaLibrary mediaLibrary = new MediaLibrary(new List<IFile>(), new List<IPlaylist<IFile>>(), new Player());
 
-            IPlaylist<IFile> playlist = new Playlist<IFile>(new List<IFile>(), "MyPlaylist");
+            IPlaylist<IFile> playlist = new Playlist<IFile>("MyPlaylist");
 
             IFile mediaFile1 = new Photo("png", "Photo01", 1000000, @"D:\Photos", "1920x1080", 1920, 1080);
             IFile mediaFile2 = new Photo("png", "Photo02", 2000000, @"D:\Photos", "1920x1080", 1920, 1080);

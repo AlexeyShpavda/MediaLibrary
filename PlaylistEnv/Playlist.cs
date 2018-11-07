@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using Interfaces.PlaylistEnv;
 using Interfaces.FileEnv;
@@ -14,11 +15,11 @@ namespace PlaylistEnv
 
         private ICollection<TFile> MediaFiles { get; set; }
 
-        public Playlist(ICollection<TFile> mediaFiles, string name)
+        public Playlist(string name)
         {
             Id = Guid.NewGuid();
             Name = name;
-            MediaFiles = mediaFiles;
+            MediaFiles = new Collection<TFile>();
         }
 
         public void AddFile(TFile mediaFile)
